@@ -55,7 +55,7 @@
                                     <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1"
                                         aria-expanded="true" aria-controls="collapseOne1">
                                         <h5 class="mb-0">
-                                            Description
+                                        <i class="fas fa-info"></i> Description
                                             <i class="fas fa-angle-down rotate-icon"></i>
                                         </h5>
                                     </a>
@@ -72,7 +72,7 @@
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx"
                                         href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                                         <h5 class="mb-0">
-                                            détails
+                                        <i class="fas fa-info"></i> détails
                                             <i class="fas fa-angle-down rotate-icon"></i>
                                         </h5>
                                     </a>
@@ -130,7 +130,7 @@
 </section>
 <div class="container my-5 mt-5">
     <section class="dark-grey-text mb-5">
-        <h3 class="font-weight-bold text-center mb-5">Commentaires sur le produit</h3>
+        <h3 class="font-weight-bold text-center mb-5"><i class="fas fa-comment"></i> Commentaires sur le produit</h3>
         <hr class="w-header my-4">
         <div class="container">
         
@@ -141,15 +141,15 @@
     </section>
 </div>
 <div class="container">
-    <h3 class="text-center">Ajouter un commentaire sur ce produit</h3>
+    <h3 class="text-center"><i class="fas fa-comment-medical"></i> Ajouter un commentaire sur ce produit</h3>
     <hr class="w-header my-4">
     <div class="row">
         <div class="container">
-        <form method="post" name="commentaire">
-            <input type="text" name="pseudo_comm" class="form-control" value="Anonyme" id="pseudo_comm">
-            <label for="pseudo_comm">Votre pseudo</label>
-            <input type="text" name="contenu_comm" class="form-control" id="contenu_comm">
-            <label for="contenu_comm">Votre commentaire</label>
+        <form method="post" name="commentaire" class="form-group">
+            <label for="pseudo_comm"><i class="fas fa-user-edit"></i> Votre pseudo</label>
+            <input type="text" name="pseudo_comm" class="form-control mt-2 mb-2" value="Anonyme" id="pseudo_comm">
+            <label for="contenu_comm"><i class="fas fa-comments"></i> Votre commentaire</label>
+            <input type="text" name="contenu_comm" class="form-control mt-2 mb-2" id="contenu_comm">
             <br>
             <button type="button" value="Valider" class="btn btn-primary" name="validation_comm" id="envoyer">Valider</button>
         </form>

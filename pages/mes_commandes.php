@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h1 class="text-center">Mes commandes</h1>
+    <h1 class="text-center"><i class="fas fa-truck-loading"></i> Mes commandes</h1>
     <table class="table table-hover mt-5">
     <thead>
         <tr>

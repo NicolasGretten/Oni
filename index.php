@@ -93,14 +93,14 @@
                         aria-labelledby="navbarDropdownMenuLink-333">
                         <?php if(!isset($_SESSION['id'])){
                                     echo '
-                                    <button id="conexionBtn" type="submit" class="btn btn-outline-secondary dropdown-item">Connexion</button>';
+                                    <button id="conexionBtn" type="submit" class="btn btn-outline-secondary dropdown-item"><i class="fas fa-sign-in-alt"></i> Connexion</button>';
                                 }
                                 else{
                                     echo'
-                                    <a href="index.php?page=4" style="text-decoration:none;"><button type="button" class="btn btn-outline-secondary dropdown-item" id="mes_commandes">Mes commandes</button></a>
-                                    <button type="submit" class="btn btn-outline-secondary dropdown-item" id="infoCompte">Mon compte</button>
+                                    <a href="index.php?page=4" style="text-decoration:none;"><button type="button" class="btn btn-outline-secondary dropdown-item" id="mes_commandes"><i class="fas fa-box"></i> Mes commandes</button></a>
+                                    <button type="submit" class="btn btn-outline-secondary dropdown-item" id="infoCompte"><i class="fas fa-user-circle"></i> Mon compte</button>
                                             <form action="index.php" method="post">
-                                            <button type="submit" class="btn btn-outline-secondary dropdown-item" value="Deconnexion" name="deconnexion">Deconnexion</button>
+                                            <button type="submit" class="btn btn-outline-secondary dropdown-item" value="Deconnexion" name="deconnexion"><i class="fas fa-sign-out-alt"></i> Deconnexion</button>
                                             </form>
                                         ';
                                 }
@@ -124,34 +124,34 @@
                 </div>
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase text-white">Services</h5>
+                    <h5 class="text-uppercase text-white"><i class="fas fa-concierge-bell"></i> Services</h5>
                     <ul class="list-unstyled text-white">
                         <li>
-                            <a href="index.php?page=22" class="text-white">Aide</a>
+                            <a href="index.php?page=22" class="text-white"><i class="fas fa-info-circle"></i> Aide</a>
                         </li>
                         <li>
-                            <a href="index.php?page=5" class="text-white">Contact</a>
+                            <a href="index.php?page=5" class="text-white"><i class="fas fa-address-book"></i> Contact</a>
                         </li>
                         <li>
-                            <a href="mailto:ngretten@gmail.com" class="text-white">ngretten@gmail.com</a>
+                            <a href="mailto:ngretten@gmail.com" class="text-white"><i class="fas fa-at"></i> ngretten@gmail.com</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-white">06.07.23.96.37</a>
+                            <a href="#!" class="text-white"><i class="fas fa-phone"></i> 06.07.23.96.37</a>
                         </li>
                     </ul>
 
                 </div>
                 <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase text-white">Société</h5>
+                    <h5 class="text-uppercase text-white"><i class="fas fa-building"></i> Société</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="index.php?page=23" class="text-white"> A propos</a>
+                            <a href="index.php?page=23" class="text-white"><i class="far fa-question-circle"></i> A propos</a>
                         </li>
                         <li>
-                            <a href="index.php?page=23" class="text-white">Informations légales</a>
+                            <a href="index.php?page=23" class="text-white"><i class="fas fa-balance-scale-right"></i> Informations légales</a>
                         </li>
                         <li>
-                            <a href="index.php?page=23" class="text-white">Protection des données</a>
+                            <a href="index.php?page=23" class="text-white"><i class="fas fa-database"></i> Protection des données</a>
                         </li>
                     </ul>
                 </div>
