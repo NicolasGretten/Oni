@@ -1,5 +1,5 @@
 <?php
-    require '../connexion.php';
+    require '../pages/connexion.php';
     if(isset($_POST)){
         $quantite = $_POST['quantite'];
         $libelle_article = $_POST['libelle_article'];

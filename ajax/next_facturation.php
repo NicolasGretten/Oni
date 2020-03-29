@@ -1,5 +1,5 @@
 <?php
-    require '../connexion.php';
+    require '../pages/connexion.php';
     if (isset($_POST)) {
         $nom=$_POST['nom'];
         $prenom=$_POST['prenom'];

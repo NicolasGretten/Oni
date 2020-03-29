@@ -1,5 +1,5 @@
 <?php
-    require '../connexion.php';
+    require '../pages/connexion.php';
     if(isset($_POST)){
         $pseudo = $_POST['pseudo'];
         $contenu = $_POST['contenu'];
@@ -9,9 +9,3 @@
         $req -> execute();
         
     }
-    else {
-        header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
-    
-        
-    }
-?>

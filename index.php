@@ -1,13 +1,11 @@
 <?php 
    if ( empty(session_id()) ) session_start(); 
-
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <?php
-    require 'function.php'; 
+    require 'pages/function.php'; 
             global $bdd;
             if (isset ($_POST['deconnexion'])){
                 $req_destroy = $bdd ->query('DELETE FROM cart WHERE id_commande="'.$_SESSION['id_commande'].'"');
@@ -31,56 +29,15 @@
                 session_destroy();
                 }
             ?>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="all" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Oni - 鬼</title>
-   <style>
-        .mainbody{
-            min-height:800px;
-        }
-    </style>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="build/css/bootstrap.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="build/css/all.css" type="text/css" media="all" />
+<link rel="stylesheet" href="build/css/style.css" type="text/css" media="all" />
+<title>Oni - 鬼</title>
 </head>
 
 <body>
-    <?php
-                /*déclaration des variables vides*/ 
-                $style1 = '';
-                $style2 = '';
-                $style3 = '';
-                $style4 = '';
-                $style5 = '';
-
-                if(isset($_GET['page'])) {
-                    $page=$_GET["page"];
-
-                    if($page ==2){
-                        $style2 = "color:white;";
-                    }
-                    elseif($page ==3){
-                        $style3 = "color:white;";
-                    }
-                    elseif($page ==4){
-                        $style4 = "color:white;";
-                    }  
-                    elseif($page ==5){
-                        $style5 = "color:white;";
-                    }  
-                    elseif($page ==6){
-                        $style2 = "color:white;";
-                    }  
-                    elseif($page ==7){
-                        $style2 = "color:white;";
-                    }  
-                    else{
-                        $style1 = "color:white;";
-                    }
-                }
-                else {
-                    $style1 = " color:white;";
-                }
-            ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.php">Oni - 鬼</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
@@ -149,14 +106,6 @@
                                 }
                                 ?>
                     </div>
-                    <!-- <div class="ml-auto">
-                        <?php if (isset($_SESSION['id']) AND isset($_SESSION['pseudo'])){
-                                echo'<p class="deja_membre">Bonjour ' .$_SESSION['pseudo'].'</p>';
-                                }
-                            else{
-                                echo'<p class="deja_membre">Déjà membres ? <a href="index.php?page=21" style="text-decoration:none color:blue">connectez vous </a></p>';
-                                }
-                            ?></div> -->
                 </li>
             </ul>
         </div>
@@ -209,23 +158,9 @@
             </div>
         </div>
     </footer>
-     <script src="jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/aa9f1d9fdf.js" crossorigin="anonymous"></script>
-   
-    <script>
-        $("#conexionBtn").click(() =>{
-            document.location.href="index.php?page=21"
-        });
-        $("#infoCompte").click(() =>{
-            document.location.href="index.php?page=7"
-        });
-    </script>
+    <script src="build/js/jquery-3.4.1.min.js"></script>
+    <script src="build/js/bootstrap.min.js"></script>
+    <script src="build/js/all.js"></script>
+    <script src="build/js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-    require '../connexion.php';
+    require '../pages/connexion.php';
     if(isset($_POST)){
         $id_commande= $_POST['id_commande'];
         $num_commande = $_POST['num_commande'];
