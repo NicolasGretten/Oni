@@ -32,7 +32,7 @@
   <section>
     <h3 class="font-weight-bold text-center dark-grey-text pb-2"><i class="fas fa-exclamation text-danger"></i> Nos Garanties <i class="fas fa-exclamation text-danger"></i></h3>
     <hr class="w-header my-4">
-    <p class="lead text-center text-dark pt-2 mb-5">Rejoingez des milliers de clients satisfait chez Oni - 鬼</p>
+    <p class="lead text-center text-dark pt-2 mb-5">Rejoingez des milliers de clients satisfaits chez Oni - 鬼</p>
     <div class="row mb-5">
       <div class="col">
         <div class="card text-center text-white text-white bg-dark mb-3">
