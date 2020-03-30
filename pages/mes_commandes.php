@@ -1,9 +1,9 @@
 <div class="container mt-5">
     <h1 class="text-center"><i class="fas fa-truck-loading"></i> Mes commandes</h1>
-    <table class="table table-hover mt-5">
+    <table class="table table-hover mt-5 text-center">
     <thead>
         <tr>
-        <th scope="col">numéro de ma commande</th>
+        <th scope="col"><i class="fas fa-barcode"></i> numéro de ma commande</th>
         <th scope="col">Date</th>
         <th scope="col">Total</th>
         <th scope="col">Status</th>

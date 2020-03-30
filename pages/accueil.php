@@ -11,7 +11,7 @@
 </div>
 <div class="container mt-5">
   <section class="dark-grey-text text-center">
-    <h3 class="font-weight-bold mb-4 pb-2"><i class="fas fa-barcode"></i> Nos meilleurs Ventes <i class="fas fa-barcode"></i></h3>
+    <h3 class="font-weight-bold mb-4 pb-2"><i class="fas fa-star text-warning"></i> Nos meilleurs Ventes <i class="fas fa-star text-warning"></i></h3>
     <hr class="w-header my-4">
     <div class="row">
     <?php
@@ -30,7 +30,7 @@
 </div>
 <div class="container my-5">
   <section>
-    <h3 class="font-weight-bold text-center dark-grey-text pb-2"><i class="fas fa-exclamation"></i> Nos Garanties <i class="fas fa-exclamation"></i></h3>
+    <h3 class="font-weight-bold text-center dark-grey-text pb-2"><i class="fas fa-exclamation text-danger"></i> Nos Garanties <i class="fas fa-exclamation text-danger"></i></h3>
     <hr class="w-header my-4">
     <p class="lead text-center text-dark pt-2 mb-5">Rejoingez des milliers de clients satisfait chez Oni - 鬼</p>
     <div class="row mb-5">

@@ -1,6 +1,6 @@
 <?php
 if (isset ($_POST['ajout_produit'])){
-  $uploaddir = '../../images/';
+  $uploaddir = '../images/';
 $uploadfile = $uploaddir . basename($_FILES['img']['name']);
 if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadfile)) {
 } 

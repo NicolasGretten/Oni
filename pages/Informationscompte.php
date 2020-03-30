@@ -13,12 +13,11 @@ else{
         $req =$bdd->query("SELECT * FROM `membre` WHERE id ='". $_SESSION['id']."'");
         $data = $req->fetch();
                     echo'
-                    <div class="container mt-5">
+                    <div class="container mt-5 text-center">
         <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
+                <div class="col-4 m-auto">
                         <div class="card border-primary mb-3" style="max-width: 20rem;">
-                                <div class="card-header">Mes Informations</div>
+                                <div class="card-header h3">Mes Informations</div>
                                 <div class="card-body">
                                         <h4 class="card-title">Nom</h4>
                                         <p class="card-text">'.$data['nom_membre'].'</p>
@@ -32,19 +31,16 @@ else{
                                 </div>
                         </div>
                 </div>
-                <div class="col-4"></div>
         </div>
 </div>';
                 }
                     
 
     ?>
-    <div class="container">
+    <div class="container text-center">
             <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4 text-center"><button type="button" class="btn btn-outline-secondary">
+                    <div class="col"><button type="button" class="btn btn-outline-secondary">
                             <a href="index.php?page=10">modifier mes informations</a></button></div>
-                    <div class="col-4"></div>
             </div>
     </div>
     

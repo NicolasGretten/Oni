@@ -19,20 +19,11 @@ function inc(){
     if(isset($_GET['page'])) {
         $page=$_GET["page"];
 
-       if($page ==2){
-           include('pages/Hommes.php');
-       }
-       elseif($page ==3){
-           include('pages/Femmes.php');
-       }
-       elseif($page ==4){
+       if($page ==4){
         include('pages/mes_commandes.php');
-    } 
-       elseif($page ==5){
-           include('pages/Contact.php');
-       }    
+       } 
        elseif($page ==6){
-           include('pages/VestesHommes.php');
+           include('pages/product.php');
        }    
        elseif($page ==7){
            include('pages/Informationscompte.php');
@@ -57,9 +48,6 @@ function inc(){
        }    
        elseif($page ==21){
            include('pages/CompteUtilisateur.php');
-       }    
-       elseif($page ==22){
-           include('pages/Aide.php');
        }    
        elseif($page ==23){
            include('pages/Apropos.php');
@@ -98,15 +86,16 @@ function bestsellers(){
             echo '
             <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
                 <div class="card align-items-center">
-                <div class="view overlay">
-                    <img src="images/'.$data['images'].'" class="card-img-top"
-                    alt="">
+                <div class="view overlay"  style="width:255px;height:385px;">
+                <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;
+                background-repeat:no-repeat;background-position:center;" class="border img-fluid w-100 h-100"></div>
+                    
                     <a>
                     <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>
                 <div class="card-body text-center">
-                    <a href="" class="grey-text">
+                    <a href="index.php?page=6&id='.$data['id_souscategorie'].'" class="grey-text">
                     <h6>'.$data['libelle_souscategorie'].'</h6>
                     </a>
                     <h5 class="mb-3">
@@ -135,9 +124,8 @@ function article($id)
       <!-- Card -->
       <div class="card align-items-center">
         <!-- Card image -->
-        <div class="view overlay" style="height:428px;width:285px;">
-          <img src="images/'.$data['images'].'" class="card-img-top border"
-            alt="'.$data['libelle_article'].'">
+        <div class="view overlay img-fluid" style="width:285px;height:385px;">
+        <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;background-repeat:no-repeat;background-position:center;" class="border img-fluid w-100 h-100"></div>
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -174,7 +162,16 @@ function article($id)
         
         $re =$bdd->query("SELECT * FROM `cart` WHERE id_commande ='". $_SESSION['id_commande']."' ORDER BY id_panier");
         if ($verif_commande == false) {
-            echo '<h1 style="text-align:center;" class="mt-5">Votre panier est vide !</h1>';
+            echo '
+            <h1 style="text-align:center;" class="mt-5">Votre panier est vide ! 
+            <i class="fas fa-frown"></i><i class="fas fa-heart-broken"></i></h1>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col text-center h5">Continuer vos achats en suivant ce <a href="index.php" class="h3 text-danger">
+                <i class="fas fa-bolt"></i> lien ! <i class="fas fa-bolt"></i></a></div>
+              </div>
+            </div>
+            ';
         } else {
             echo'
         <div class="container my-5 py-3 z-depth-1 rounded">

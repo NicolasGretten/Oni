@@ -75,7 +75,7 @@
                 ?>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="index.php?page=23">Contact</a>
                 </li>
                 
             </ul>

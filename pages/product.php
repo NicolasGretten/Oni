@@ -80,6 +80,32 @@ $data = $re -> fetch();
                     ?>
                 </div>
                 <hr class="w-header my-4">
+                <div class="container-fluid mt-5">
+                    <div class="row">
+                        <div class="col border p-5 mr-2">
+                            <div class="row mb-4">
+                                <div class="col h3">Rejoignez la communauté ! </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><a href=""><i class="fab fa-facebook fa-3x text-info"></i></a></div>
+                                <div class="col"><a href=""><i class="fab fa-instagram fa-3x text-info"></i></a></div>
+                                <div class="col"><a href=""><i class="fab fa-twitter fa-3x text-info"></i></a></div>
+                                <div class="col"><a href=""><i class="fab fa-youtube fa-3x text-info"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col border p-5 ml-2">
+                            <div class="row mb-4">
+                                <div class="col h3">Modes de paiement et sociétés de livraison </div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><i class="fab fa-paypal fa-3x text-info"></i></div>
+                                <div class="col"><i class="fab fa-cc-mastercard fa-3x text-info"></i></div>
+                                <div class="col"><i class="fab fa-ups fa-3x text-info"></i></div>
+                                <div class="col"><i class="fab fa-dhl fa-3x text-info"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
