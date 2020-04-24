@@ -13,7 +13,7 @@
   <section class="dark-grey-text text-center">
     <h3 class="font-weight-bold mb-4 pb-2"><i class="fas fa-star text-warning"></i> Nos meilleurs Ventes <i class="fas fa-star text-warning"></i></h3>
     <hr class="w-header my-4">
-    <div class="row">
+    <div class="row justify-content-center">
     <?php
       bestsellers();
     ?>

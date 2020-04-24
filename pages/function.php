@@ -84,7 +84,7 @@ function bestsellers(){
     for($i = 0; $i < 3; $i++){
         while($data = $req-> fetch()){
             echo '
-            <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
+            <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card align-items-center">
                 <div class="view overlay"  style="width:255px;height:385px;">
                 <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;
