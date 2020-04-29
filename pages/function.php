@@ -86,9 +86,9 @@ function bestsellers(){
             echo '
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card align-items-center">
-                <div class="view overlay"  style="width:255px;height:385px;">
+                <div class="view overlay p-1"  style="width:255px;height:385px;">
                 <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;
-                background-repeat:no-repeat;background-position:center;" class="img-fluid w-100 h-100"></div>
+                background-repeat:no-repeat;background-position:center;" class="img-fluid  w-100 h-100"></div>
                     
                     <a>
                     <div class="mask rgba-white-slight"></div>
