@@ -88,7 +88,7 @@ function bestsellers(){
                 <div class="card align-items-center">
                 <div class="view overlay"  style="width:255px;height:385px;">
                 <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;
-                background-repeat:no-repeat;background-position:center;" class="border img-fluid w-100 h-100"></div>
+                background-repeat:no-repeat;background-position:center;" class="img-fluid w-100 h-100"></div>
                     
                     <a>
                     <div class="mask rgba-white-slight"></div>
@@ -120,20 +120,15 @@ function article($id)
     while ($data = $re -> fetch()) {
         echo'
         
-        <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
-      <!-- Card -->
+    <div class="col-12 col-lg-6 col-xl-3 mb-5 mt-5">
       <div class="card align-items-center">
-        <!-- Card image -->
-        <div class="view overlay img-fluid" style="width:285px;height:385px;">
-        <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;background-repeat:no-repeat;background-position:center;" class="border img-fluid w-100 h-100"></div>
+        <div class="view overlay img-fluid p-3" style="width:285px;height:385px;">
+        <div style="background-image:url(\'images/'.$data['images'].'\');background-size:contain;background-repeat:no-repeat;background-position:center;" class="img-fluid pt-5 w-100 h-100"></div>
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
         </div>
-        <!-- Card image -->
-        <!-- Card content -->
         <div class="card-body text-center">
-          <!-- Category & Title -->
           <a href="" class="grey-text">
             <h6>'.$data['libelle_souscategorie'].'</h6>
           </a>
@@ -147,9 +142,7 @@ function article($id)
             <strong>'.$data['prix'].'€</strong>
           </h5>
         </div>
-        <!-- Card content -->
       </div>
-      <!-- Card -->
     </div>';
     }
 }
